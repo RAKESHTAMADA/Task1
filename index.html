@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="../Task1/login.html">
+        <label for="rname">Name : </label>
+        <input type="text" placeholder="Enter Name" id="rname" name="name" required/><br/><br/>
+        <label for="rmail">E-Mail :</label>
+        <input type="email" placeholder="Enter Email" id="rmail" name="email" required/><br/><br/>
+        <label for="rpassword">Password : </label>
+        <input type="password" placeholder="Enter Password" id="rpassword" name="password" required/><br/><br/>
+        <label for="rcpassword">Confirm Password : </label>
+        <input type="password" placeholder="Enter Password" id="rcpassword" name="password" required/><br/><br/>
+        <label for="rphone">Mobile Number :</label>
+        <input type="tel" placeholder="Mobile Number" id="rphone" name="phone" required/><br/><br/>
+        <div>
+            Gender:
+            <input type="radio" id="gmale" name="gender"/>
+            <label for="gmale">Male</label>
+            <input type="radio" id="gfemale" name="gender"/>
+            <label for="gfemale">Female</label>
+        </div><br/>
+        <div>
+            Education Details:
+            <input type="checkbox" name="10th"/>10th
+            <input type="checkbox" name="inter"/>Inter
+            <input type="checkbox" name="diploma"/>Diploma
+            <input type="checkbox" name="btech"/>Btech
+        </div><br/>
+        <div>
+            <select>
+                <option value="">Select City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+        </div><br/>
+        <textarea name="message" rows="5" cols="30"></textarea><br/><br/>
+        <button>Register</button>
+    </form>
+</body>
+</html>
