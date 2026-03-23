@@ -1,24 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/originals/47/46/45/474645f78a12273a1de7e3cec86a2cb5.jpg");
+            background-size: cover;
+            min-height: 69vh;
+        }
+
+        .parent-login {
+            background-color: white;
+            width: 25%;
+            margin: 15% auto 0% auto;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 5px 10px 10px 10px;
+            border-radius: 10px;
+        }
+
+        .form-field {
+            margin: 5% 0%;
+        }
+
+        .form-field input {
+            padding: 10px;
+            width: 80%;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .form-con {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+        }
+
+        .form-regg {
+            font-weight: bold;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #0f2027 0%, #2c1a4d 51%, #ff3c3c 100%);
+        }
+
+        .btn-grad {
+            margin: 10px;
+            margin-left: 125px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 60, 60, 0.5);
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="../Task1/biography.html">
-        <div>
+    <form action="../Task1/biography.html" class="parent-login">
         <h3>Login</h3>
-        <label for="lemail">Eamil : </label>
-        <input type="email" placeholder="Enter Email" id="lemail" name="email" required/><br/><br/>
-
-        <label for="lpassword">Password : </label>
-        <input type="password" placeholder="Enter Password" id="lpassword" name="password" required/><br/><br/>
-
-        <a href="">Forget Password</a>
-        <p>Don't have an account! <a href="../Task1/index.html">Register</a></p>
-        <button>Login</button>
-    </div>
+        <div class="form-field">
+            <input type="email" placeholder="Email" name="email" required />
+        </div>
+        <div class="form-field">
+            <input type="password" placeholder="Password" name="password" required />
+        </div>
+        <div class="form-con">
+            <a href="">Forget Password</a>
+        </div>
+        <div class="form-regg">
+            <p>Don't have an account! <a href="../Task1/index.html">Register</a></p>
+        </div>
+        <button class="btn-grad">Login</button>
     </form>
 </body>
+
 </html>

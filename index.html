@@ -1,46 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/748572.jpg");
+            background-size: cover;
+            min-height: 79vh;
+        }
+
+        .parent-reg {
+            background-color: white;
+            width: 30%;
+            margin: 3% auto 0% auto;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 5px 10px 10px 10px;
+            border-radius: 10px;
+        }
+
+        .form-field {
+            margin: 5% 0%;
+        }
+
+        .form-field input {
+            padding: 10px;
+            width: 80%;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .form-radio {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+        }
+
+        .form-checkbox {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .form-option {
+            width: 85%;
+            margin: auto;
+            margin-top: 3%;
+            text-align: left;
+        }
+
+        .form-textarea {
+            width: 85%;
+            margin: auto;
+            text-align: left;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #1a1a1a 0%, #8b5e34 51%, #ffb347 100%);
+        }
+
+        .btn-grad {
+            margin: 10px auto;
+            padding: 10px;
+            width: 30%;
+            box-sizing: border-box;
+
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 179, 71, 0.6);
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="../Task1/login.html">
-        <label for="rname">Name : </label>
-        <input type="text" placeholder="Enter Name" id="rname" name="name" required/><br/><br/>
-        <label for="rmail">E-Mail :</label>
-        <input type="email" placeholder="Enter Email" id="rmail" name="email" required/><br/><br/>
-        <label for="rpassword">Password : </label>
-        <input type="password" placeholder="Enter Password" id="rpassword" name="password" required/><br/><br/>
-        <label for="rcpassword">Confirm Password : </label>
-        <input type="password" placeholder="Enter Password" id="rcpassword" name="password" required/><br/><br/>
-        <label for="rphone">Mobile Number :</label>
-        <input type="tel" placeholder="Mobile Number" id="rphone" name="phone" required/><br/><br/>
-        <div>
+    <form action="../Task1/login.html" class="parent-reg">
+        <h3>Registration Form</h3>
+        <div class="form-field">
+            <input type="text" placeholder="First Name" name="name" required />
+        </div>
+        <div class="form-field">
+            <input type="text" placeholder="Last Name" name="name" required />
+        </div>
+        <div class="form-field">
+            <input type="email" placeholder="Email" name="email" required />
+        </div>
+        <div class="form-field">
+            <input type="password" placeholder="Password" name="password" required />
+        </div>
+        <div class="form-field">
+            <input type="password" placeholder="Confirm Password" name="password" required />
+        </div>
+        <div class="form-field">
+            <input type="tel" placeholder="Mobile Number" name="phone" required />
+        </div>
+        <div class="form-radio">
             Gender:
-            <input type="radio" id="gmale" name="gender"/>
+            <input type="radio" id="gmale" name="gender" />
             <label for="gmale">Male</label>
-            <input type="radio" id="gfemale" name="gender"/>
+            <input type="radio" id="gfemale" name="gender" />
             <label for="gfemale">Female</label>
-        </div><br/>
-        <div>
-            Education Details:
-            <input type="checkbox" name="10th"/>10th
-            <input type="checkbox" name="inter"/>Inter
-            <input type="checkbox" name="diploma"/>Diploma
-            <input type="checkbox" name="btech"/>Btech
-        </div><br/>
-        <div>
+        </div>
+        <div class="form-checkbox">
+            Education:
+            <input type="checkbox" name="10th" />10th
+            <input type="checkbox" name="inter" />Inter
+            <input type="checkbox" name="diploma" />Diploma
+            <input type="checkbox" name="btech" />Btech
+        </div>
+        <div class="form-option">
             <select>
                 <option value="">Select City</option>
                 <option value="Hyderabad">Hyderabad</option>
                 <option value="Banglore">Banglore</option>
                 <option value="Chennai">Chennai</option>
-            </select>
-        </div><br/>
-        <textarea name="message" rows="5" cols="30"></textarea><br/><br/>
-        <button>Register</button>
+            </select><br /><br />
+        </div>
+        <div class="form-textarea">
+            <textarea name="message" rows="5" cols="30" placeholder="Address"></textarea>
+        </div>
+        <button class="btn-grad">Register</button>
     </form>
 </body>
+
 </html>
